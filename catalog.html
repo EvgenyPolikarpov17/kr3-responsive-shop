@@ -1,908 +1,423 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Каталог учебных канцтоваров ShopProject: ручки, пеналы, бумага, клей, альбомы и фломастеры."
-  >
-
-  <title>Каталог канцтоваров — ShopProject</title>
-
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
-  <link rel="stylesheet" href="css/accessibility.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Каталог учебных канцтоваров ShopProject: ручки, пеналы, бумага, клей, альбомы и фломастеры." name="description"/>
+<title>Каталог канцтоваров — ShopProject</title>
 
 
+<link href="css/style.css" rel="stylesheet"/><link href="css/responsive.css" rel="stylesheet"/><link href="css/accessibility.css" rel="stylesheet"/><script defer="True" src="js/main.js"></script></head>
 <body id="top">
-
-  <a
-    class="skip-link"
-    href="#main-content"
-  >
+<a class="skip-link" href="#main-content">
     Перейти к содержимому
   </a>
 
-
-  <!-- ===============================
-       Шапка сайта
-       =============================== -->
-
-  <header class="site-header">
-
-    <div class="site-header__inner">
-
-      <a
-        class="site-header__logo"
-        href="index.html"
-      >
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">
         ShopProject
       </a>
-
-
-      <nav
-        class="site-nav"
-        aria-label="Основная навигация"
-      >
-
-        <ul class="site-nav__list">
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="index.html"
-            >
+<button aria-controls="primary-navigation" aria-expanded="false" class="site-nav__toggle" type="button">Меню</button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation">
+<ul class="site-nav__list">
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html">
               Главная
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__link--active"
-              href="catalog.html"
-              aria-current="page"
-            >
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link site-nav__link--active" href="catalog.html">
               Каталог
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="product.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="product.html">
               Товар
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="order.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="order.html">
               Заявка
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="contacts.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="contacts.html">
               Контакты
             </a>
-          </li>
+</li>
+</ul>
+</nav>
+</div>
+</header>
 
-        </ul>
+<main id="main-content" tabindex="-1">
 
-      </nav>
-
-    </div>
-
-  </header>
-
-
-  <!-- ===============================
-       Основное содержимое
-       =============================== -->
-
-  <main id="main-content" tabindex="-1">
-
-
-    <!-- Хлебные крошки -->
-
-    <nav
-      class="breadcrumbs"
-      aria-label="Хлебные крошки"
-    >
-
-      <a
-        class="breadcrumbs__link"
-        href="index.html"
-      >
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">
         Главная
       </a>
-
-      <span
-        class="breadcrumbs__current"
-        aria-current="page"
-      >
+<span aria-current="page" class="breadcrumbs__current">
         Каталог
       </span>
+</nav>
 
-    </nav>
-
-
-    <!-- Заголовок каталога -->
-
-    <section class="section section--compact">
-
-      <div class="section__heading">
-
-        <p class="section__eyebrow">
+<section class="section section--compact">
+<div class="section__heading">
+<p class="section__eyebrow">
           Каталог
         </p>
-
-        <h1 class="section__title">
+<h1 class="section__title">
           Канцтовары для учёбы
         </h1>
-
-      </div>
-
-
-      <p class="section__text">
+</div>
+<p class="section__text">
         Всё необходимое для школы и университета:
         ручки, пеналы, бумага, товары для творчества
         и другие учебные принадлежности.
       </p>
+</section>
 
-    </section>
+<div class="catalog-layout">
 
-
-    <!-- ===============================
-         Каталог и фильтры
-         =============================== -->
-
-    <div class="catalog-layout">
-
-
-      <!-- Фильтры -->
-
-      <aside
-        class="catalog-filters"
-        aria-labelledby="filters-title"
-      >
-
-        <h2
-          class="catalog-filters__title"
-          id="filters-title"
-        >
+<button aria-controls="catalog-filters-panel" aria-expanded="false" class="catalog-filters__toggle" type="button">Фильтры товаров</button><aside aria-labelledby="filters-title" class="catalog-filters" id="catalog-filters-panel">
+<h2 class="catalog-filters__title" id="filters-title">
           Фильтры
         </h2>
+<form action="catalog.html" class="filters-form" id="catalog-filter-form" method="get">
 
-
-        <form
-          class="filters-form"
-          action="#"
-          method="get"
-        >
-
-
-          <!-- Категория -->
-
-          <fieldset class="filters-form__group">
-
-            <legend class="filters-form__legend">
+<fieldset class="filters-form__group">
+<legend class="filters-form__legend">
               Категория
             </legend>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="writing"
-              >
+<label class="filters-form__label">
+<input class="filters-form__checkbox" name="category" type="checkbox" value="writing"/>
 
               Письменные принадлежности
 
             </label>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="paper"
-              >
+<label class="filters-form__label">
+<input class="filters-form__checkbox" name="category" type="checkbox" value="paper"/>
 
               Бумага и тетради
 
             </label>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="creative"
-              >
+<label class="filters-form__label">
+<input class="filters-form__checkbox" name="category" type="checkbox" value="creative"/>
 
               Рисование и творчество
 
             </label>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__checkbox"
-                type="checkbox"
-                name="category"
-                value="accessories"
-              >
+<label class="filters-form__label">
+<input class="filters-form__checkbox" name="category" type="checkbox" value="accessories"/>
 
               Аксессуары
 
             </label>
+</fieldset>
 
-          </fieldset>
-
-
-          <!-- Цена -->
-
-          <fieldset class="filters-form__group">
-
-            <legend class="filters-form__legend">
+<fieldset class="filters-form__group">
+<legend class="filters-form__legend">
               Цена
             </legend>
-
-
-            <label
-              class="filters-form__label"
-              for="price-from"
-            >
+<label class="filters-form__label" for="price-from">
               От
             </label>
-
-            <input
-              class="filters-form__input"
-              id="price-from"
-              name="price-from"
-              type="number"
-              min="0"
-              placeholder="0"
-            >
-
-
-            <label
-              class="filters-form__label"
-              for="price-to"
-            >
+<input class="filters-form__input" id="price-from" min="0" name="price-from" placeholder="0" type="number"/>
+<label class="filters-form__label" for="price-to">
               До
             </label>
+<input class="filters-form__input" id="price-to" min="0" name="price-to" placeholder="1000" type="number"/>
+</fieldset>
 
-            <input
-              class="filters-form__input"
-              id="price-to"
-              name="price-to"
-              type="number"
-              min="0"
-              placeholder="1000"
-            >
-
-          </fieldset>
-
-
-          <!-- Наличие -->
-
-          <fieldset class="filters-form__group">
-
-            <legend class="filters-form__legend">
+<fieldset class="filters-form__group">
+<legend class="filters-form__legend">
               Наличие
             </legend>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__radio"
-                type="radio"
-                name="stock"
-                value="all"
-                checked
-              >
+<label class="filters-form__label">
+<input checked="" class="filters-form__radio" name="stock" type="radio" value="all"/>
 
               Все
 
             </label>
-
-
-            <label class="filters-form__label">
-
-              <input
-                class="filters-form__radio"
-                type="radio"
-                name="stock"
-                value="available"
-              >
+<label class="filters-form__label">
+<input class="filters-form__radio" name="stock" type="radio" value="available"/>
 
               Только в наличии
 
             </label>
+</fieldset>
 
-          </fieldset>
-
-
-          <!-- Кнопки -->
-
-          <div class="filters-form__actions">
-
-            <button
-              class="button button--primary"
-              type="button"
-            >
+<div class="filters-form__actions">
+<button class="button button--primary" type="submit">
               Применить
             </button>
-
-
-            <button
-              class="button button--secondary"
-              type="reset"
-            >
+<button class="button button--secondary" type="reset">
               Сбросить
             </button>
+</div>
+</form>
+</aside>
 
-          </div>
-
-        </form>
-
-      </aside>
-
-
-      <!-- ===============================
-           Товары
-           =============================== -->
-
-      <section
-        class="catalog-products"
-        aria-labelledby="catalog-products-title"
-      >
-
-
-        <div class="catalog-products__header">
-
-          <h2
-            class="catalog-products__title"
-            id="catalog-products-title"
-          >
+<section aria-labelledby="catalog-products-title" class="catalog-products">
+<div class="catalog-products__header">
+<h2 class="catalog-products__title" id="catalog-products-title">
             Товары
           </h2>
-
-          <p class="catalog-products__count">
+<p aria-live="polite" class="catalog-products__count" role="status">
             Найдено: 6
           </p>
+</div><p class="catalog-products__empty" hidden="" role="status">По заданным условиям товары не найдены. Измените фильтры или сбросьте их.</p>
+<div class="products-grid">
 
-        </div>
-
-
-        <div class="products-grid">
-
-
-          <!-- ===============================
-               Товар 1
-               =============================== -->
-
-          <article
-            class="product-card product-card--featured"
-          >
-
-            <span
-              class="product-card__badge product-card__badge--hit"
-            >
+<article class="product-card product-card--featured" data-category="writing" data-price="307" data-stock="true">
+<span class="product-card__badge product-card__badge--hit">
               Хит
             </span>
-
-            <img alt="Набор синих шариковых ручек Schneider Slider" class="product-card__image" decoding="async" height="550" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-1.jpg" srcset="images/product-1-320.jpg 320w, images/product-1-480.jpg 480w, images/product-1-550.jpg 550w" width="550"/>
-
-
-
-            <p class="product-card__category">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-1-320.webp 320w, images/product-1-480.webp 480w, images/product-1-550.webp 550w" type="image/webp"/><img alt="Набор синих шариковых ручек Schneider Slider" class="product-card__image" decoding="async" height="550" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-1.jpg" srcset="images/product-1-320.jpg 320w, images/product-1-480.jpg 480w, images/product-1-550.jpg 550w" width="550"/></picture>
+<p class="product-card__category">
               Ручки
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               Schneider Slider — набор ручек, 4 шт.
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Набор синих шариковых ручек для школы
               и университета с удобным корпусом
               и плавным письмом.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span class="product-card__availability">
+<div class="product-card__meta">
+<span class="product-card__availability">
                 В наличии
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 4,9
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
+</div>
+<p class="product-card__price">
               307 ₽
             </p>
-
-
-            <div class="product-card__actions">
-
-              <a
-                class="button button--secondary"
-                href="product.html"
-              >
+<div class="product-card__actions">
+<a class="button button--secondary" href="product.html">
                 Подробнее
               </a>
-
-              <a
-                class="button button--primary"
-                href="order.html"
-              >
+<a class="button button--primary" href="order.html">
                 Заказать
               </a>
+</div>
+</article>
 
-            </div>
-
-          </article>
-
-
-          <!-- ===============================
-               Товар 2
-               =============================== -->
-
-          <article
-            class="product-card product-card--new"
-          >
-
-            <span
-              class="product-card__badge product-card__badge--new"
-            >
+<article class="product-card product-card--new" data-category="accessories" data-price="278" data-stock="true">
+<span class="product-card__badge product-card__badge--new">
               Новинка
             </span>
-
-
-            <img alt="Школьный пенал с тремя отделениями" class="product-card__image" decoding="async" height="1500" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-2.jpg" srcset="images/product-2-320.jpg 320w, images/product-2-480.jpg 480w, images/product-2-960.jpg 960w" width="1500"/>
-
-
-            <p class="product-card__category">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-2-320.webp 320w, images/product-2-480.webp 480w, images/product-2-960.webp 960w" type="image/webp"/><img alt="Школьный пенал с тремя отделениями" class="product-card__image" decoding="async" height="1500" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-2.jpg" srcset="images/product-2-320.jpg 320w, images/product-2-480.jpg 480w, images/product-2-960.jpg 960w" width="1500"/></picture>
+<p class="product-card__category">
               Пеналы
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               Пенал школьный, 3 отделения
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Вместительный пенал для ручек,
               карандашей, маркеров и других
               учебных принадлежностей.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span class="product-card__availability">
+<div class="product-card__meta">
+<span class="product-card__availability">
                 В наличии
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 4,9
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
+</div>
+<p class="product-card__price">
               278 ₽
             </p>
-
-
-            <div class="product-card__actions">
-
-              <a
-                class="button button--secondary"
-                href="product.html"
-              >
+<div class="product-card__actions">
+<a class="button button--secondary" href="product.html">
                 Подробнее
               </a>
-
-              <a
-                class="button button--primary"
-                href="order.html"
-              >
+<a class="button button--primary" href="order.html">
                 Заказать
               </a>
+</div>
+</article>
 
-            </div>
-
-          </article>
-
-
-          <!-- ===============================
-               Товар 3
-               =============================== -->
-
-          <article class="product-card">
-
-            <img alt="Сменный блок Hatber формата А5 на 200 листов" class="product-card__image" decoding="async" height="800" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-3.jpg" srcset="images/product-3-320.jpg 320w, images/product-3-480.jpg 480w, images/product-3-800.jpg 800w" width="800"/>
-
-
-            <p class="product-card__category">
+<article class="product-card" data-category="paper" data-price="236" data-stock="true">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-3-320.webp 320w, images/product-3-480.webp 480w, images/product-3-800.webp 800w" type="image/webp"/><img alt="Сменный блок Hatber формата А5 на 200 листов" class="product-card__image" decoding="async" height="800" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-3.jpg" srcset="images/product-3-320.jpg 320w, images/product-3-480.jpg 480w, images/product-3-800.jpg 800w" width="800"/></picture>
+<p class="product-card__category">
               Бумага и тетради
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               Hatber — сменный блок А5, 200 листов
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Сменный блок формата А5 для тетрадей
               на кольцах. Подходит для конспектов
               и учебных записей.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span class="product-card__availability">
+<div class="product-card__meta">
+<span class="product-card__availability">
                 В наличии
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 4,9
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
+</div>
+<p class="product-card__price">
               236 ₽
             </p>
-
-
-            <div class="product-card__actions">
-
-              <a
-                class="button button--secondary"
-                href="product.html"
-              >
+<div class="product-card__actions">
+<a class="button button--secondary" href="product.html">
                 Подробнее
               </a>
-
-              <a
-                class="button button--primary"
-                href="order.html"
-              >
+<a class="button button--primary" href="order.html">
                 Заказать
               </a>
+</div>
+</article>
 
-            </div>
-
-          </article>
-
-
-          <!-- ===============================
-               Товар 4
-               =============================== -->
-
-          <article
-            class="product-card product-card--discount"
-          >
-
-            <span
-              class="product-card__badge product-card__badge--discount"
-            >
+<article class="product-card product-card--discount" data-category="creative" data-price="188" data-stock="true">
+<span class="product-card__badge product-card__badge--discount">
               −20%
             </span>
-
-
-            <img alt="Набор клея-карандаша ErichKrause Extra" class="product-card__image" decoding="async" height="1200" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-4.jpg" srcset="images/product-4-320.jpg 320w, images/product-4-480.jpg 480w, images/product-4-900.jpg 900w" width="900"/>
-
-
-            <p class="product-card__category">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-4-320.webp 320w, images/product-4-480.webp 480w, images/product-4-900.webp 900w" type="image/webp"/><img alt="Набор клея-карандаша ErichKrause Extra" class="product-card__image" decoding="async" height="1200" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-4.jpg" srcset="images/product-4-320.jpg 320w, images/product-4-480.jpg 480w, images/product-4-900.jpg 900w" width="900"/></picture>
+<p class="product-card__category">
               Творчество
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               ErichKrause Extra — клей-карандаш, 3 шт.
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Набор клеевых карандашей для бумаги,
               картона, аппликаций и других
               учебных работ.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span class="product-card__availability">
+<div class="product-card__meta">
+<span class="product-card__availability">
                 В наличии
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 5,0
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
-
-              <span class="product-card__old-price">
+</div>
+<p class="product-card__price">
+<span class="product-card__old-price">
                 235 ₽
               </span>
 
               188 ₽
 
             </p>
-
-
-            <div class="product-card__actions">
-
-              <a
-                class="button button--secondary"
-                href="product.html"
-              >
+<div class="product-card__actions">
+<a class="button button--secondary" href="product.html">
                 Подробнее
               </a>
-
-              <a
-                class="button button--primary"
-                href="order.html"
-              >
+<a class="button button--primary" href="order.html">
                 Заказать
               </a>
+</div>
+</article>
 
-            </div>
-
-          </article>
-
-
-          <!-- ===============================
-               Товар 5
-               =============================== -->
-
-          <article class="product-card">
-
-            <img alt="Альбом для рисования Brauberg формата А4" class="product-card__image" decoding="async" height="2000" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-5.jpg" srcset="images/product-5-320.jpg 320w, images/product-5-480.jpg 480w, images/product-5-960.jpg 960w" width="1500"/>
-
-
-            <p class="product-card__category">
+<article class="product-card" data-category="creative" data-price="379" data-stock="true">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-5-320.webp 320w, images/product-5-480.webp 480w, images/product-5-960.webp 960w" type="image/webp"/><img alt="Альбом для рисования Brauberg формата А4" class="product-card__image" decoding="async" height="2000" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-5.jpg" srcset="images/product-5-320.jpg 320w, images/product-5-480.jpg 480w, images/product-5-960.jpg 960w" width="1500"/></picture>
+<p class="product-card__category">
               Рисование
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               Brauberg — альбом А4, 40 листов, 2 шт.
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Набор альбомов для рисования
               на спирали с плотной обложкой
               и белой бумагой.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span class="product-card__availability">
+<div class="product-card__meta">
+<span class="product-card__availability">
                 В наличии
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 5,0
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
+</div>
+<p class="product-card__price">
               379 ₽
             </p>
-
-
-            <div class="product-card__actions">
-
-              <a
-                class="button button--secondary"
-                href="product.html"
-              >
+<div class="product-card__actions">
+<a class="button button--secondary" href="product.html">
                 Подробнее
               </a>
-
-              <a
-                class="button button--primary"
-                href="order.html"
-              >
+<a class="button button--primary" href="order.html">
                 Заказать
               </a>
+</div>
+</article>
 
-            </div>
-
-          </article>
-
-
-          <!-- ===============================
-               Товар 6
-               =============================== -->
-
-          <article
-            class="product-card product-card--unavailable"
-          >
-
-            <span
-              class="product-card__badge product-card__badge--muted"
-            >
+<article class="product-card product-card--unavailable" data-category="creative" data-price="78" data-stock="false">
+<span class="product-card__badge product-card__badge--muted">
               Нет в наличии
             </span>
-
-
-            <img alt="Двусторонние фломастеры Alingar на 6 цветов" class="product-card__image" decoding="async" height="800" loading="lazy" sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1279px) 33vw, 25vw" src="images/product-6.jpg" srcset="images/product-6-320.jpg 320w, images/product-6-480.jpg 480w, images/product-6-800.jpg 800w" width="800"/>
-
-
-            <p class="product-card__category">
+<picture class="product-card__picture"><source sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" srcset="images/product-6-320.webp 320w, images/product-6-480.webp 480w, images/product-6-800.webp 800w" type="image/webp"/><img alt="Двусторонние фломастеры Alingar на 6 цветов" class="product-card__image" decoding="async" height="800" loading="lazy" sizes="(min-width: 1280px) 240px, (min-width: 1024px) 290px, (min-width: 640px) 45vw, 88vw" src="images/product-6.jpg" srcset="images/product-6-320.jpg 320w, images/product-6-480.jpg 480w, images/product-6-800.jpg 800w" width="800"/></picture>
+<p class="product-card__category">
               Рисование
             </p>
-
-
-            <h3 class="product-card__title">
+<h3 class="product-card__title">
               Alingar — фломастеры, 6 цветов
             </h3>
-
-
-            <p class="product-card__description">
+<p class="product-card__description">
               Набор двусторонних цветных фломастеров
               для уроков рисования и детского
               творчества.
             </p>
-
-
-            <div class="product-card__meta">
-
-              <span
-                class="product-card__availability product-card__availability--muted"
-              >
+<div class="product-card__meta">
+<span class="product-card__availability product-card__availability--muted">
                 Ожидается
               </span>
-
-              <span class="product-card__rating">
+<span class="product-card__rating">
                 ★ 4,9
               </span>
-
-            </div>
-
-
-            <p class="product-card__price">
+</div>
+<p class="product-card__price">
               78 ₽
             </p>
-
-
-            <span
-              class="button button--disabled product-card__button"
-              aria-disabled="true"
-            >
+<span aria-disabled="true" class="button button--disabled product-card__button">
               Недоступно
             </span>
+</article>
+</div>
+</section>
+</div>
+</main>
 
-          </article>
-
-        </div>
-
-      </section>
-
-    </div>
-
-  </main>
-
-
-  <!-- ===============================
-       Фиксированная кнопка
-       =============================== -->
-
-  <a
-    class="floating-action"
-    href="order.html"
-   
-  >
+<a class="floating-action" href="order.html">
     Оставить заявку
   </a>
 
-
-  <!-- ===============================
-       Подвал
-       =============================== -->
-
-  <footer class="site-footer">
-
-    <div class="site-footer__inner">
-
-      <div>
-
-        <strong class="site-footer__logo">
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div>
+<strong class="site-footer__logo">
           ShopProject
         </strong>
-
-        <p class="site-footer__text">
+<p class="site-footer__text">
           Учебный каталог канцтоваров для школы,
           университета и творчества.
         </p>
-
-      </div>
-
-
-      <nav
-        class="site-footer__nav"
-        aria-label="Дополнительная навигация"
-      >
-
-        <a
-          class="site-footer__link"
-          href="index.html"
-        >
+</div>
+<nav aria-label="Дополнительная навигация" class="site-footer__nav">
+<a class="site-footer__link" href="index.html">
           Главная
         </a>
-
-        <a
-          class="site-footer__link"
-          href="contacts.html"
-        >
+<a class="site-footer__link" href="contacts.html">
           Контакты
         </a>
-
-        <a
-          class="site-footer__link"
-          href="#top"
-        >
+<a class="site-footer__link" href="#top">
           Наверх ↑
         </a>
-
-      </nav>
-
-    </div>
-
-  </footer>
-
+</nav>
+</div>
+</footer>
 </body>
-
 </html>
+

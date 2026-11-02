@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Оформление заявки на канцтовары в ShopProject." name="description"/>
+<title>Заявка — ShopProject</title>
+<script defer="" src="js/main.js"></script>
+
+<link href="css/style.css" rel="stylesheet"/><link href="css/responsive.css" rel="stylesheet"/><link href="css/accessibility.css" rel="stylesheet"/></head>
+<body id="top">
+<a class="skip-link" href="#main-content">
+    Перейти к содержимому
+  </a>
+
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">
+        ShopProject
+      </a>
+<button aria-controls="primary-navigation" aria-expanded="false" class="site-nav__toggle" type="button">Меню</button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation">
+<ul class="site-nav__list">
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html">
+              Главная
+            </a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="catalog.html">
+              Каталог
+            </a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="product.html">
+              Товар
+            </a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link site-nav__link--active" href="order.html">
+              Заявка
+            </a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="contacts.html">
+              Контакты
+            </a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">
+        Главная
+      </a>
+<span aria-current="page" class="breadcrumbs__current">
+        Заявка
+      </span>
+</nav>
+
+<section class="section section--compact">
+<div class="section__heading">
+<p class="section__eyebrow">
+          Оформление
+        </p>
+<h1 class="section__title">
+          Оставить заявку
+        </h1>
+</div>
+<p class="section__text">
+        Выберите нужный канцтовар и заполните контактные данные.
+        После успешной проверки формы появится сообщение
+        о принятии заявки.
+      </p>
+</section>
+
+<div class="order-layout">
+
+<section aria-labelledby="order-form-title" class="order-panel">
+<h2 class="order-panel__title" id="order-form-title">
+          Контактные данные
+        </h2>
+<form action="#" class="order-form order-form--page" id="page-order-form" method="post">
+<p class="form-note">
+  Поля, отмеченные звёздочкой (*), обязательны для заполнения.
+</p>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-name">
+              Имя *
+            </label>
+<input autocomplete="given-name" class="order-form__input" id="page-order-name" minlength="2" name="name" required="" type="text"/>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-email">
+              E-mail *
+            </label>
+<input autocomplete="email" class="order-form__input" id="page-order-email" name="email" required="" type="email"/>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-phone">
+              Телефон *
+            </label>
+<input aria-describedby="page-order-phone-hint" class="order-form__input" id="page-order-phone" inputmode="tel" name="phone" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" placeholder="+7 (900) 000-00-00" required="" type="tel"/>
+<small class="order-form__hint" id="page-order-phone-hint">
+              Формат: +7 (900) 000-00-00
+            </small>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-product">
+              Выбранный товар *
+            </label>
+<select class="order-form__select" id="page-order-product" name="product" required="">
+<option value="">
+                Выберите товар
+              </option>
+<option value="schneider-slider">
+                Schneider Slider — набор ручек, 4 шт. — 307 ₽
+              </option>
+<option value="pencil-case">
+                Пенал школьный, 3 отделения — 278 ₽
+              </option>
+<option value="hatber-a5">
+                Hatber — сменный блок А5, 200 листов — 236 ₽
+              </option>
+<option value="erichkrause-glue">
+                ErichKrause Extra — клей-карандаш, 3 шт. — 188 ₽
+              </option>
+<option value="brauberg-album">
+                Brauberg — альбом А4, 40 листов, 2 шт. — 379 ₽
+              </option>
+<option value="alingar-markers">
+                Alingar — фломастеры, 6 цветов — 78 ₽
+              </option>
+</select>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-topic">
+              Тема заявки *
+            </label>
+<select class="order-form__select" id="page-order-topic" name="topic" required="">
+<option value="">
+                Выберите тему
+              </option>
+<option value="order">
+                Заказ товара
+              </option>
+<option value="consultation">
+                Консультация
+              </option>
+<option value="delivery">
+                Вопрос по доставке
+              </option>
+</select>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-date">
+              Желаемая дата связи
+            </label>
+<input class="order-form__input" id="page-order-date" name="date" type="date"/>
+</div>
+
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-comment">
+              Комментарий
+            </label>
+<textarea class="order-form__textarea" id="page-order-comment" name="comment" placeholder="Например: удобное время для звонка или дополнительный вопрос" rows="5"></textarea>
+</div>
+
+<div class="order-form__field order-form__field--checkbox">
+<label class="order-form__checkbox-label" for="page-order-agreement">
+<input class="order-form__checkbox" id="page-order-agreement" name="agreement" required="" type="checkbox"/>
+
+              Я согласен на обработку персональных данных *
+
+            </label>
+</div>
+
+<div class="order-form__actions">
+<button class="button button--primary" type="submit">
+              Отправить заявку
+            </button>
+<a class="button button--secondary" href="catalog.html">
+              Вернуться в каталог
+            </a>
+</div>
+</form>
+
+<p class="success-message" hidden="" id="page-success-message" role="status">
+          ✓ Заявка успешно отправлена!
+          Спасибо, мы получили ваши данные.
+        </p>
+</section>
+
+<aside aria-labelledby="order-summary-title" class="order-summary">
+<p class="order-summary__eyebrow">
+          Как это работает
+        </p>
+<h2 class="order-summary__title" id="order-summary-title">
+          Три простых шага
+        </h2>
+<ol class="order-summary__list">
+<li class="order-summary__item">
+<span class="order-summary__number">
+              1
+            </span>
+<span>
+              Выберите канцтовар из списка.
+            </span>
+</li>
+<li class="order-summary__item">
+<span class="order-summary__number">
+              2
+            </span>
+<span>
+              Заполните контактные данные.
+            </span>
+</li>
+<li class="order-summary__item">
+<span class="order-summary__number">
+              3
+            </span>
+<span>
+              Отправьте заявку.
+            </span>
+</li>
+</ol>
+<div class="order-summary__notice">
+<strong>
+            Обратите внимание
+          </strong>
+<p>
+            Это учебная форма. Данные используются
+            только для демонстрации работы интерфейса
+            и не отправляются на реальный сервер.
+          </p>
+</div>
+</aside>
+</div>
+</main>
+
+<a class="floating-action" href="catalog.html">
+    Каталог
+  </a>
+
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div>
+<strong class="site-footer__logo">
+          ShopProject
+        </strong>
+<p class="site-footer__text">
+          Учебный интернет-магазин канцтоваров
+          для школы, университета и творчества.
+        </p>
+</div>
+<nav aria-label="Дополнительная навигация" class="site-footer__nav">
+<a class="site-footer__link" href="index.html">
+          Главная
+        </a>
+<a class="site-footer__link" href="catalog.html">
+          Каталог
+        </a>
+<a class="site-footer__link" href="contacts.html">
+          Контакты
+        </a>
+<a class="site-footer__link" href="#top">
+          Наверх ↑
+        </a>
+</nav>
+</div>
+</footer>
+</body>
+</html>
+

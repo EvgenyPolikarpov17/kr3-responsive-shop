@@ -1,644 +1,284 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Оформление заявки на канцтовары в ShopProject." name="description"/>
+<title>Заявка — ShopProject</title>
+<script defer="" src="js/main.js"></script>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Оформление заявки на канцтовары в ShopProject."
-  >
-
-  <title>Заявка — ShopProject</title>
-
-
-  <script
-    src="js/main.js"
-    defer
-  ></script>
-  <link rel="stylesheet" href="css/accessibility.css">
-</head>
-
-
+<link href="css/style.css" rel="stylesheet"/><link href="css/responsive.css" rel="stylesheet"/><link href="css/accessibility.css" rel="stylesheet"/></head>
 <body id="top">
-
-  <a
-    class="skip-link"
-    href="#main-content"
-  >
+<a class="skip-link" href="#main-content">
     Перейти к содержимому
   </a>
 
-
-  <!-- ===============================
-       Шапка сайта
-       =============================== -->
-
-  <header class="site-header">
-
-    <div class="site-header__inner">
-
-      <a
-        class="site-header__logo"
-        href="index.html"
-      >
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">
         ShopProject
       </a>
-
-
-      <nav
-        class="site-nav"
-        aria-label="Основная навигация"
-      >
-
-        <ul class="site-nav__list">
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="index.html"
-            >
+<button aria-controls="primary-navigation" aria-expanded="false" class="site-nav__toggle" type="button">Меню</button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation">
+<ul class="site-nav__list">
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html">
               Главная
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="catalog.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="catalog.html">
               Каталог
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="product.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="product.html">
               Товар
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__link--active"
-              href="order.html"
-              aria-current="page"
-            >
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link site-nav__link--active" href="order.html">
               Заявка
             </a>
-          </li>
-
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link"
-              href="contacts.html"
-            >
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="contacts.html">
               Контакты
             </a>
-          </li>
+</li>
+</ul>
+</nav>
+</div>
+</header>
 
-        </ul>
+<main id="main-content" tabindex="-1">
 
-      </nav>
-
-    </div>
-
-  </header>
-
-
-  <!-- ===============================
-       Основное содержимое
-       =============================== -->
-
-  <main id="main-content" tabindex="-1">
-
-
-    <!-- Хлебные крошки -->
-
-    <nav
-      class="breadcrumbs"
-      aria-label="Хлебные крошки"
-    >
-
-      <a
-        class="breadcrumbs__link"
-        href="index.html"
-      >
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">
         Главная
       </a>
-
-      <span
-        class="breadcrumbs__current"
-        aria-current="page"
-      >
+<span aria-current="page" class="breadcrumbs__current">
         Заявка
       </span>
+</nav>
 
-    </nav>
-
-
-    <!-- Заголовок страницы -->
-
-    <section class="section section--compact">
-
-      <div class="section__heading">
-
-        <p class="section__eyebrow">
+<section class="section section--compact">
+<div class="section__heading">
+<p class="section__eyebrow">
           Оформление
         </p>
-
-        <h1 class="section__title">
+<h1 class="section__title">
           Оставить заявку
         </h1>
-
-      </div>
-
-
-      <p class="section__text">
+</div>
+<p class="section__text">
         Выберите нужный канцтовар и заполните контактные данные.
         После успешной проверки формы появится сообщение
         о принятии заявки.
       </p>
+</section>
 
-    </section>
+<div class="order-layout">
 
-
-    <!-- ===============================
-         Форма и информация
-         =============================== -->
-
-    <div class="order-layout">
-
-
-      <!-- Форма -->
-
-      <section
-        class="order-panel"
-        aria-labelledby="order-form-title"
-      >
-
-        <h2
-          class="order-panel__title"
-          id="order-form-title"
-        >
+<section aria-labelledby="order-form-title" class="order-panel">
+<h2 class="order-panel__title" id="order-form-title">
           Контактные данные
         </h2>
-
-
-        <form
-          class="order-form order-form--page"
-          id="page-order-form"
-          action="#"
-          method="post"
-        >
+<form action="#" class="order-form order-form--page" id="page-order-form" method="post">
 <p class="form-note">
   Поля, отмеченные звёздочкой (*), обязательны для заполнения.
 </p>
 
-
-          <!-- Имя -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-name"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-name">
               Имя *
             </label>
+<input autocomplete="given-name" class="order-form__input" id="page-order-name" minlength="2" name="name" required="" type="text"/>
+</div>
 
-            <input
-              class="order-form__input"
-              id="page-order-name"
-              name="name"
-              type="text"
-              minlength="2"
-              autocomplete="given-name"
-              required
-            >
-
-          </div>
-
-
-          <!-- E-mail -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-email"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-email">
               E-mail *
             </label>
+<input autocomplete="email" class="order-form__input" id="page-order-email" name="email" required="" type="email"/>
+</div>
 
-            <input
-              class="order-form__input"
-              id="page-order-email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              required
-            >
-
-          </div>
-
-
-          <!-- Телефон -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-phone"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-phone">
               Телефон *
             </label>
-
-            <input
-              class="order-form__input"
-              id="page-order-phone"
-              name="phone"
-              type="tel"
-              inputmode="tel"
-              placeholder="+7 (900) 000-00-00"
-              pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-              aria-describedby="page-order-phone-hint"
-              required
-            >
-
-            <small
-              class="order-form__hint"
-              id="page-order-phone-hint"
-            >
+<input aria-describedby="page-order-phone-hint" class="order-form__input" id="page-order-phone" inputmode="tel" name="phone" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" placeholder="+7 (900) 000-00-00" required="" type="tel"/>
+<small class="order-form__hint" id="page-order-phone-hint">
               Формат: +7 (900) 000-00-00
             </small>
+</div>
 
-          </div>
-
-
-          <!-- Выбор товара -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-product"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-product">
               Выбранный товар *
             </label>
-
-            <select
-              class="order-form__select"
-              id="page-order-product"
-              name="product"
-              required
-            >
-
-              <option value="">
+<select class="order-form__select" id="page-order-product" name="product" required="">
+<option value="">
                 Выберите товар
               </option>
-
-              <option value="schneider-slider">
+<option value="schneider-slider">
                 Schneider Slider — набор ручек, 4 шт. — 307 ₽
               </option>
-
-              <option value="pencil-case">
+<option value="pencil-case">
                 Пенал школьный, 3 отделения — 278 ₽
               </option>
-
-              <option value="hatber-a5">
+<option value="hatber-a5">
                 Hatber — сменный блок А5, 200 листов — 236 ₽
               </option>
-
-              <option value="erichkrause-glue">
+<option value="erichkrause-glue">
                 ErichKrause Extra — клей-карандаш, 3 шт. — 188 ₽
               </option>
-
-              <option value="brauberg-album">
+<option value="brauberg-album">
                 Brauberg — альбом А4, 40 листов, 2 шт. — 379 ₽
               </option>
-
-              <option value="alingar-markers">
+<option value="alingar-markers">
                 Alingar — фломастеры, 6 цветов — 78 ₽
               </option>
+</select>
+</div>
 
-            </select>
-
-          </div>
-
-
-          <!-- Тема заявки -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-topic"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-topic">
               Тема заявки *
             </label>
-
-            <select
-              class="order-form__select"
-              id="page-order-topic"
-              name="topic"
-              required
-            >
-
-              <option value="">
+<select class="order-form__select" id="page-order-topic" name="topic" required="">
+<option value="">
                 Выберите тему
               </option>
-
-              <option value="order">
+<option value="order">
                 Заказ товара
               </option>
-
-              <option value="consultation">
+<option value="consultation">
                 Консультация
               </option>
-
-              <option value="delivery">
+<option value="delivery">
                 Вопрос по доставке
               </option>
+</select>
+</div>
 
-            </select>
-
-          </div>
-
-
-          <!-- Дата -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-date"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-date">
               Желаемая дата связи
             </label>
+<input class="order-form__input" id="page-order-date" name="date" type="date"/>
+</div>
 
-            <input
-              class="order-form__input"
-              id="page-order-date"
-              name="date"
-              type="date"
-            >
-
-          </div>
-
-
-          <!-- Комментарий -->
-
-          <div class="order-form__field">
-
-            <label
-              class="order-form__label"
-              for="page-order-comment"
-            >
+<div class="order-form__field">
+<label class="order-form__label" for="page-order-comment">
               Комментарий
             </label>
+<textarea class="order-form__textarea" id="page-order-comment" name="comment" placeholder="Например: удобное время для звонка или дополнительный вопрос" rows="5"></textarea>
+</div>
 
-            <textarea
-              class="order-form__textarea"
-              id="page-order-comment"
-              name="comment"
-              rows="5"
-              placeholder="Например: удобное время для звонка или дополнительный вопрос"
-            ></textarea>
-
-          </div>
-
-
-          <!-- Согласие -->
-
-          <div
-            class="order-form__field order-form__field--checkbox"
-          >
-
-            <label
-              class="order-form__checkbox-label"
-              for="page-order-agreement"
-            >
-
-              <input
-                class="order-form__checkbox"
-                id="page-order-agreement"
-                name="agreement"
-                type="checkbox"
-                required
-              >
+<div class="order-form__field order-form__field--checkbox">
+<label class="order-form__checkbox-label" for="page-order-agreement">
+<input class="order-form__checkbox" id="page-order-agreement" name="agreement" required="" type="checkbox"/>
 
               Я согласен на обработку персональных данных *
 
             </label>
+</div>
 
-          </div>
-
-
-          <!-- Кнопки -->
-
-          <div class="order-form__actions">
-
-            <button
-              class="button button--primary"
-              type="submit"
-            >
+<div class="order-form__actions">
+<button class="button button--primary" type="submit">
               Отправить заявку
             </button>
-
-            <a
-              class="button button--secondary"
-              href="catalog.html"
-            >
+<a class="button button--secondary" href="catalog.html">
               Вернуться в каталог
             </a>
+</div>
+</form>
 
-          </div>
-
-        </form>
-
-
-        <!-- Сообщение после успешной отправки -->
-
-        <p
-          class="success-message"
-          id="page-success-message"
-          role="status"
-          hidden
-        >
+<p class="success-message" hidden="" id="page-success-message" role="status">
           ✓ Заявка успешно отправлена!
           Спасибо, мы получили ваши данные.
         </p>
+</section>
 
-      </section>
-
-
-      <!-- ===============================
-           Информация справа
-           =============================== -->
-
-      <aside
-        class="order-summary"
-        aria-labelledby="order-summary-title"
-      >
-
-        <p class="order-summary__eyebrow">
+<aside aria-labelledby="order-summary-title" class="order-summary">
+<p class="order-summary__eyebrow">
           Как это работает
         </p>
-
-        <h2
-          class="order-summary__title"
-          id="order-summary-title"
-        >
+<h2 class="order-summary__title" id="order-summary-title">
           Три простых шага
         </h2>
-
-
-        <ol class="order-summary__list">
-
-          <li class="order-summary__item">
-
-            <span class="order-summary__number">
+<ol class="order-summary__list">
+<li class="order-summary__item">
+<span class="order-summary__number">
               1
             </span>
-
-            <span>
+<span>
               Выберите канцтовар из списка.
             </span>
-
-          </li>
-
-
-          <li class="order-summary__item">
-
-            <span class="order-summary__number">
+</li>
+<li class="order-summary__item">
+<span class="order-summary__number">
               2
             </span>
-
-            <span>
+<span>
               Заполните контактные данные.
             </span>
-
-          </li>
-
-
-          <li class="order-summary__item">
-
-            <span class="order-summary__number">
+</li>
+<li class="order-summary__item">
+<span class="order-summary__number">
               3
             </span>
-
-            <span>
+<span>
               Отправьте заявку.
             </span>
-
-          </li>
-
-        </ol>
-
-
-        <div class="order-summary__notice">
-
-          <strong>
+</li>
+</ol>
+<div class="order-summary__notice">
+<strong>
             Обратите внимание
           </strong>
-
-          <p>
+<p>
             Это учебная форма. Данные используются
             только для демонстрации работы интерфейса
             и не отправляются на реальный сервер.
           </p>
+</div>
+</aside>
+</div>
+</main>
 
-        </div>
-
-      </aside>
-
-    </div>
-
-  </main>
-
-
-  <!-- ===============================
-       Фиксированная кнопка
-       =============================== -->
-
-  <a
-    class="floating-action"
-    href="catalog.html"
-   
-  >
+<a class="floating-action" href="catalog.html">
     Каталог
   </a>
 
-
-  <!-- ===============================
-       Подвал
-       =============================== -->
-
-  <footer class="site-footer">
-
-    <div class="site-footer__inner">
-
-      <div>
-
-        <strong class="site-footer__logo">
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div>
+<strong class="site-footer__logo">
           ShopProject
         </strong>
-
-        <p class="site-footer__text">
+<p class="site-footer__text">
           Учебный интернет-магазин канцтоваров
           для школы, университета и творчества.
         </p>
-
-      </div>
-
-
-      <nav
-        class="site-footer__nav"
-        aria-label="Дополнительная навигация"
-      >
-
-        <a
-          class="site-footer__link"
-          href="index.html"
-        >
+</div>
+<nav aria-label="Дополнительная навигация" class="site-footer__nav">
+<a class="site-footer__link" href="index.html">
           Главная
         </a>
-
-        <a
-          class="site-footer__link"
-          href="catalog.html"
-        >
+<a class="site-footer__link" href="catalog.html">
           Каталог
         </a>
-
-        <a
-          class="site-footer__link"
-          href="contacts.html"
-        >
+<a class="site-footer__link" href="contacts.html">
           Контакты
         </a>
-
-        <a
-          class="site-footer__link"
-          href="#top"
-        >
+<a class="site-footer__link" href="#top">
           Наверх ↑
         </a>
-
-      </nav>
-
-    </div>
-
-  </footer>
-
+</nav>
+</div>
+</footer>
 </body>
-
 </html>
+
