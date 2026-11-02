@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -25,6 +25,7 @@
     src="js/main.js"
     defer
   ></script>
+  <link rel="stylesheet" href="css/accessibility.css">
 </head>
 
 
@@ -120,7 +121,7 @@
        Основное содержимое
        =============================== -->
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
 
 
     <!-- Хлебные крошки -->
@@ -201,6 +202,9 @@
           action="#"
           method="post"
         >
+<p class="form-note">
+  Поля, отмеченные звёздочкой (*), обязательны для заполнения.
+</p>
 
 
           <!-- Имя -->
@@ -572,7 +576,7 @@
   <a
     class="floating-action"
     href="catalog.html"
-    aria-label="Вернуться в каталог товаров"
+   
   >
     Каталог
   </a>
