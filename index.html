@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -21,8 +21,7 @@
     src="js/main.js"
     defer
   ></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accessibility.css">
 </head>
 
 
@@ -114,7 +113,7 @@
 
 
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
 
 
     <section class="hero">
@@ -720,7 +719,7 @@
 
   <dialog
     class="order-dialog"
-    id="order-dialog"
+    id="order-dialog" aria-labelledby="order-dialog-title"
   >
 
     <div class="order-dialog__header">
@@ -731,7 +730,7 @@
           Быстрая заявка
         </p>
 
-        <h2 class="order-dialog__title">
+        <h2 class="order-dialog__title" id="order-dialog-title">
           Оформить товар
         </h2>
 
@@ -743,9 +742,7 @@
         id="close-order-dialog"
         type="button"
         aria-label="Закрыть окно"
-      >
-        ×
-      </button>
+      ><span aria-hidden="true">×</span></button>
 
     </div>
 
@@ -756,6 +753,9 @@
       action="#"
       method="post"
     >
+<p class="form-note">
+  Поля, отмеченные звёздочкой (*), обязательны для заполнения.
+</p>
 
 
       <p
@@ -966,7 +966,7 @@
   <a
     class="floating-action"
     href="order.html"
-    aria-label="Перейти к оформлению заявки"
+   
   >
     Оставить заявку
   </a>
