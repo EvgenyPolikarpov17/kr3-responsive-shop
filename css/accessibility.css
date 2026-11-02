@@ -4,8 +4,6 @@
   --color-danger: #8d2b23;
 }
 
-/* Видимый фокус */
-
 :focus-visible {
   outline: 3px solid #145a85;
   outline-offset: 3px;
@@ -28,16 +26,12 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-/* Фокус на кнопках */
-
 .button--primary:focus-visible,
 .floating-action:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 3px;
   box-shadow: 0 0 0 6px #145a85;
 }
-
-/* Ссылка пропуска навигации */
 
 .skip-link:focus,
 .skip-link:focus-visible {
@@ -47,8 +41,6 @@ textarea:focus-visible {
 #main-content {
   scroll-margin-top: 100px;
 }
-
-/* Пояснения к формам */
 
 .form-note {
   grid-column: 1 / -1;
@@ -60,8 +52,6 @@ textarea:focus-visible {
   font-size: 14px;
   line-height: 1.5;
 }
-
-/* Сообщения об ошибках */
 
 .form-error {
   margin: 6px 0 0;
@@ -89,8 +79,6 @@ textarea:focus-visible {
   line-height: 1.5;
 }
 
-/* Некорректные поля */
-
 .order-form__input[aria-invalid="true"],
 .order-form__textarea[aria-invalid="true"],
 .order-form__select[aria-invalid="true"] {
@@ -104,8 +92,6 @@ input[type="checkbox"][aria-invalid="true"] {
   outline-offset: 3px;
 }
 
-/* Доступность текста */
-
 .section__text,
 .product-card__description,
 .contact-card__text,
@@ -113,8 +99,6 @@ input[type="checkbox"][aria-invalid="true"] {
 .faq-item__answer {
   color: var(--color-muted);
 }
-
-/* Поддержка уменьшения анимации */
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -129,8 +113,6 @@ input[type="checkbox"][aria-invalid="true"] {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* Контрастность карточек товаров */
 
 .product-card__rating,
 .product-details__rating {

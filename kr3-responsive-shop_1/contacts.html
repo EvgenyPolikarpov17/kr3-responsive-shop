@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Контакты ShopProject, способы связи и быстрые ответы на вопросы." name="description"/>
+<title>Контакты — ShopProject</title>
+
+
+<link href="css/style.css" rel="stylesheet"/><link href="css/responsive.css" rel="stylesheet"/><link href="css/accessibility.css" rel="stylesheet"/><script defer="True" src="js/main.js"></script></head>
+<body id="top">
+<a class="skip-link" href="#main-content">Перейти к содержимому</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ShopProject</a>
+<button aria-controls="primary-navigation" aria-expanded="false" class="site-nav__toggle" type="button">Меню</button><nav aria-label="Основная навигация" class="site-nav" id="primary-navigation">
+<ul class="site-nav__list">
+<li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+<li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+<li class="site-nav__item"><a aria-current="page" class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Контакты</span>
+</nav>
+<section class="section section--compact">
+<div class="section__heading">
+<p class="section__eyebrow">Связь</p>
+<h1 class="section__title">Контакты</h1>
+</div>
+<p class="section__text">Выберите удобный способ связи или перейдите к форме заявки.</p>
+</section>
+<section aria-label="Контактная информация" class="contacts-grid">
+<article class="contact-card">
+<span class="contact-card__label">Телефон</span>
+<a class="contact-card__value" href="tel:+79000000000">+7 (900) 000-00-00</a>
+<p class="contact-card__text">Учебный номер для демонстрации ссылки tel.</p>
+</article>
+<article class="contact-card">
+<span class="contact-card__label">E-mail</span>
+<a class="contact-card__value" href="mailto:info@example.com">info@example.com</a>
+<p class="contact-card__text">Учебный адрес для демонстрации ссылки mailto.</p>
+</article>
+<article class="contact-card">
+<span class="contact-card__label">Адрес</span>
+<span class="contact-card__value">г. Москва, учебный проект</span>
+<p class="contact-card__text">Условный адрес, используемый только в рамках работы.</p>
+</article>
+</section>
+<section class="section">
+<div class="section__heading">
+<p class="section__eyebrow">Обратная связь</p>
+<h2 class="section__title">Нужна консультация?</h2>
+</div>
+<div class="contact-action">
+<div>
+<h3 class="contact-action__title">Перейдите к заявке</h3>
+<p class="contact-action__text">На отдельной странице доступны имя, e-mail, телефон, выбор товара, тема и комментарий.</p>
+</div>
+<a class="button button--primary" href="order.html">Оформить заявку</a>
+</div>
+</section>
+<section class="section">
+<div class="section__heading">
+<p class="section__eyebrow">
+  Полезная информация
+</p>
+<h2 class="section__title">
+  Частые вопросы
+</h2>
+</div>
+<div class="faq-list">
+<details class="faq-item">
+<summary class="faq-item__question">Почему на сайте пять страниц?</summary>
+<p class="faq-item__answer">Это итоговая структура контрольной работы №1: главная, каталог, товар, заявка и контакты.</p>
+</details>
+<details class="faq-item">
+<summary class="faq-item__question">Где показано позиционирование?</summary>
+<p class="faq-item__answer">В карточках используются relative/absolute, фильтр каталога — sticky, кнопка заявки — fixed, а для слоёв используется z-index.</p>
+</details>
+<details class="faq-item">
+<summary class="faq-item__question">Как обеспечена доступность?</summary>
+<p class="faq-item__answer">Используются aria-атрибуты, подписи label, видимый focus-visible, skip-link, alt-тексты и понятные состояния.</p>
+</details>
+</div>
+</section>
+<section aria-labelledby="feedback-title" class="section feedback-section"><h2 class="section__title" id="feedback-title">Написать нам</h2><p class="section__text">Заполните форму, чтобы проверить работу обратной связи. Данные не отправляются на сервер.</p><form action="contacts.html" class="order-form feedback-form" id="feedback-form" method="post">
+<p class="form-note">Все поля обязательны для заполнения.</p>
+<div class="order-form__field"><label class="order-form__label" for="feedback-name">Имя *</label><input autocomplete="name" class="order-form__input" id="feedback-name" minlength="2" name="name" required="" type="text"/></div>
+<div class="order-form__field"><label class="order-form__label" for="feedback-email">E-mail *</label><input autocomplete="email" class="order-form__input" id="feedback-email" name="email" required="" type="email"/></div>
+<div class="order-form__field order-form__field--wide"><label class="order-form__label" for="feedback-message">Сообщение *</label><textarea class="order-form__textarea" id="feedback-message" minlength="10" name="message" required=""></textarea></div>
+<div class="order-form__actions"><button class="button button--primary" type="submit">Отправить сообщение</button></div>
+</form><p class="success-message" hidden="" id="feedback-success-message" role="status">Сообщение проверено. Это демонстрационная форма, данные не отправлены на сервер.</p></section></main>
+<a class="floating-action" href="order.html">Оставить заявку</a>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div><strong class="site-footer__logo">ShopProject</strong><p class="site-footer__text">Контакты и ссылка на форму заявки.</p></div>
+<nav aria-label="Дополнительная навигация" class="site-footer__nav">
+<a class="site-footer__link" href="catalog.html">Каталог</a>
+<a class="site-footer__link" href="order.html">Заявка</a>
+<a class="site-footer__link" href="#top">Наверх ↑</a>
+</nav>
+</div>
+</footer>
+</body>
+</html>
+

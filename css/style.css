@@ -1,7 +1,3 @@
-/* ===============================
-   1. Переменные проекта
-   =============================== */
-
 :root {
   --color-bg: #f5efe6;
   --color-surface: #fffaf3;
@@ -40,11 +36,6 @@
 
   --container-width: 1120px;
 }
-
-
-/* ===============================
-   2. Базовые стили
-   =============================== */
 
 * {
   box-sizing: border-box;
@@ -100,11 +91,6 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
-
-/* ===============================
-   3. Ссылка пропуска навигации
-   =============================== */
-
 .skip-link {
   position: fixed;
 
@@ -128,11 +114,6 @@ summary:focus-visible {
 .skip-link:focus {
   transform: translateY(0);
 }
-
-
-/* ===============================
-   4. Шапка сайта
-   =============================== */
 
 .site-header {
   position: sticky;
@@ -175,11 +156,6 @@ summary:focus-visible {
 .site-header__logo:hover {
   color: var(--color-primary-dark);
 }
-
-
-/* ===============================
-   5. Навигация
-   =============================== */
 
 .site-nav__list {
   display: flex;
@@ -229,11 +205,6 @@ summary:focus-visible {
   background-color: var(--color-primary-dark);
 }
 
-
-/* ===============================
-   6. Общие секции
-   =============================== */
-
 .section {
   max-width: var(--container-width);
 
@@ -277,11 +248,6 @@ summary:focus-visible {
 
   color: var(--color-muted);
 }
-
-
-/* ===============================
-   7. Hero-блок
-   =============================== */
 
 .hero {
   display: grid;
@@ -350,11 +316,6 @@ summary:focus-visible {
 
   margin-top: var(--space-lg);
 }
-
-
-/* ===============================
-   8. Информационная карточка Hero
-   =============================== */
 
 .hero__panel {
   align-self: center;
@@ -455,11 +416,6 @@ summary:focus-visible {
   border-radius: 50%;
 }
 
-
-/* ===============================
-   9. Кнопки
-   =============================== */
-
 .button {
   display: inline-block;
 
@@ -511,11 +467,6 @@ summary:focus-visible {
   cursor: not-allowed;
 }
 
-
-/* ===============================
-   10. Преимущества
-   =============================== */
-
 .benefits-grid {
   display: grid;
 
@@ -554,11 +505,6 @@ summary:focus-visible {
 
   color: var(--color-muted);
 }
-
-
-/* ===============================
-   11. Карточки товаров
-   =============================== */
 
 .products-grid {
   display: grid;
@@ -750,11 +696,6 @@ summary:focus-visible {
   align-self: flex-start;
 }
 
-
-/* ===============================
-   12. Этапы оформления заявки
-   =============================== */
-
 .steps-list {
   display: grid;
 
@@ -810,11 +751,6 @@ summary:focus-visible {
   color: var(--color-muted);
 }
 
-
-/* ===============================
-   13. Хлебные крошки
-   =============================== */
-
 .breadcrumbs {
   max-width: var(--container-width);
 
@@ -835,11 +771,6 @@ summary:focus-visible {
 
   color: var(--color-muted);
 }
-
-
-/* ===============================
-   14. Каталог
-   =============================== */
 
 .catalog-layout {
   display: grid;
@@ -873,11 +804,6 @@ summary:focus-visible {
 
   color: var(--color-muted);
 }
-
-
-/* ===============================
-   15. Фильтры каталога
-   =============================== */
 
 .catalog-filters {
   position: sticky;
@@ -955,11 +881,6 @@ summary:focus-visible {
 
   gap: var(--space-sm);
 }
-
-
-/* ===============================
-   16. Страница товара
-   =============================== */
 
 .product-details {
   display: grid;
@@ -1110,11 +1031,6 @@ summary:focus-visible {
   background-color: var(--color-success-bg);
 }
 
-
-/* ===============================
-   17. Таблица характеристик
-   =============================== */
-
 .table-wrapper {
   overflow-x: auto;
 
@@ -1153,11 +1069,6 @@ summary:focus-visible {
 .product-table__head {
   background-color: var(--color-primary-soft);
 }
-
-
-/* ===============================
-   18. Формы
-   =============================== */
 
 .order-form__notice {
   margin: 0 0 var(--space-lg);
@@ -1245,11 +1156,6 @@ summary:focus-visible {
   background-color: var(--color-danger-bg);
 }
 
-
-/* ===============================
-   19. Модальное окно
-   =============================== */
-
 .order-dialog {
   width: min(100% - 32px, 620px);
 
@@ -1329,11 +1235,6 @@ summary:focus-visible {
 
   border-radius: var(--radius-sm);
 }
-
-
-/* ===============================
-   20. Страница заявки
-   =============================== */
 
 .order-layout {
   display: grid;
@@ -1433,11 +1334,6 @@ summary:focus-visible {
   margin-bottom: 0;
 }
 
-
-/* ===============================
-   21. Контакты
-   =============================== */
-
 .contacts-grid {
   display: grid;
 
@@ -1523,11 +1419,6 @@ summary:focus-visible {
   color: var(--color-muted);
 }
 
-
-/* ===============================
-   22. FAQ
-   =============================== */
-
 .faq-list {
   display: grid;
 
@@ -1563,11 +1454,6 @@ summary:focus-visible {
   color: var(--color-muted);
 }
 
-
-/* ===============================
-   23. Дополнительные блоки товара
-   =============================== */
-
 .feature-strip {
   display: grid;
 
@@ -1598,11 +1484,6 @@ summary:focus-visible {
   color: var(--color-muted);
 }
 
-
-/* ===============================
-   24. Фиксированная кнопка
-   =============================== */
-
 .floating-action {
   position: fixed;
 
@@ -1632,11 +1513,6 @@ summary:focus-visible {
 
   background-color: var(--color-primary);
 }
-
-
-/* ===============================
-   25. Подвал сайта
-   =============================== */
 
 .site-footer {
   flex-shrink: 0;
