@@ -1,0 +1,419 @@
+/* Адаптивная вёрстка. Mobile First. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 0;
+}
+
+main {
+  width: 100%;
+  min-width: 0;
+  padding: 16px;
+}
+
+.container,
+.main,
+.section {
+  width: min(100%, var(--container-width, 1120px));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(24px, 5vw, 48px);
+}
+
+.section__title {
+  font-size: clamp(24px, 5vw, 32px);
+}
+
+.breadcrumbs,
+.catalog-layout,
+.product-details,
+.order-layout,
+.contacts-grid {
+  width: min(100%, var(--container-width, 1120px));
+  margin-inline: auto;
+}
+
+/* Шапка и меню */
+.site-header {
+  position: static;
+  top: auto;
+}
+
+.site-header__inner {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 16px;
+}
+
+.site-header__logo {
+  align-self: flex-start;
+}
+
+.site-nav,
+.site-nav__list,
+.site-nav__item {
+  width: 100%;
+  min-width: 0;
+}
+
+.site-nav__list {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.site-nav__link {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+/* Главная страница */
+.hero {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  padding: clamp(20px, 4vw, 48px);
+}
+
+.hero__content,
+.hero__panel {
+  min-width: 0;
+}
+
+.hero__title {
+  font-size: clamp(28px, 7vw, 56px);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.hero__actions,
+.product-card__actions,
+.product-details__actions {
+  flex-wrap: wrap;
+}
+
+.hero__panel {
+  padding: clamp(18px, 3vw, 32px);
+}
+
+.hero__panel-list {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.benefits-grid,
+.steps-list,
+.contacts-grid,
+.feature-strip {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Карточки товаров */
+.products-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.product-card {
+  min-width: 0;
+  padding: clamp(16px, 3vw, 24px);
+}
+
+.product-card__title,
+.product-card__description {
+  overflow-wrap: anywhere;
+}
+
+.product-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.product-card__actions .button {
+  max-width: 100%;
+}
+
+/* Каталог и фильтр */
+.catalog-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.catalog-filters {
+  position: static;
+  top: auto;
+  order: -1;
+  min-width: 0;
+  padding: 16px;
+}
+
+.catalog-products {
+  min-width: 0;
+}
+
+.catalog-products__header,
+.filters-form__actions {
+  flex-wrap: wrap;
+}
+
+.filters-form__actions .button {
+  flex: 1 1 140px;
+}
+
+/* Страница товара */
+.product-details {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.product-details__visual {
+  min-height: 0;
+  padding: 20px;
+}
+
+.product-details__picture {
+  display: block;
+  width: 100%;
+}
+
+.product-details__image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.product-details__title {
+  font-size: clamp(26px, 5vw, 40px);
+  overflow-wrap: anywhere;
+}
+
+/* Форма заявки и диалог */
+.order-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.order-panel,
+.order-summary {
+  min-width: 0;
+  padding: clamp(16px, 3vw, 32px);
+}
+
+.order-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.order-form__field {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.order-form__input,
+.order-form__select,
+.order-form__textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.order-form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.order-form__actions,
+.order-form__notice,
+.order-form__field--checkbox {
+  grid-column: 1 / -1;
+}
+
+.order-dialog {
+  width: min(calc(100% - 32px), 560px);
+  max-width: calc(100dvh - 32px);
+  overflow-y: auto;
+  padding: clamp(16px, 3vw, 32px);
+}
+
+.order-dialog__close {
+  flex: 0 0 40px;
+}
+
+/* Таблица: прокручивается отдельно от страницы */
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.product-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Подвал, контакты, плавающая кнопка */
+.site-footer__inner,
+.contact-action {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-card {
+  min-width: 0;
+}
+
+.contact-card__value {
+  overflow-wrap: anywhere;
+}
+
+.floating-action {
+  position: static;
+  display: table;
+  margin: 16px auto 24px;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .products-grid,
+  .hero__panel-list,
+  .benefits-grid,
+  .contacts-grid,
+  .feature-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 24px;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-header__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+  }
+
+  .site-nav,
+  .site-nav__item {
+    width: auto;
+  }
+
+  .site-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .site-nav__link {
+    display: inline-block;
+    width: auto;
+    padding: 9px 10px;
+  }
+
+  .order-form--page {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .order-form--page .order-form__actions,
+  .order-form--page .order-form__field--checkbox {
+    grid-column: 1 / -1;
+  }
+
+  .floating-action {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 90;
+    margin: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+  }
+
+  .product-details {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .catalog-filters {
+    position: sticky;
+    top: 88px;
+    order: initial;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .order-layout {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  }
+
+  .benefits-grid,
+  .contacts-grid,
+  .feature-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .site-footer__inner,
+  .contact-action {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

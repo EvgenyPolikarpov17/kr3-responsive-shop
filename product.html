@@ -170,11 +170,10 @@
           Хит
         </span>
 
-        <img
-          class="product-details__image"
-          src="images/product-1.jpg"
-          alt="Набор синих шариковых ручек Schneider Slider, 4 штуки"
-        >
+        <picture class="product-details__picture">
+          <source type="image/webp" srcset="images/product-1-480.webp 480w, images/product-1-550.webp 550w" sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1023px) 50vw, 520px">
+          <img alt="Набор синих шариковых ручек Schneider Slider, 4 штуки" class="product-details__image" height="550" sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1023px) 50vw, 520px" src="images/product-1.jpg" srcset="images/product-1-320.jpg 320w, images/product-1-480.jpg 480w, images/product-1-550.jpg 550w" width="550"/>
+        </picture>
 
       </div>
 
